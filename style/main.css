@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+}
+
+.line{
+    width: 100%;
+    margin: 2vw 0;
+    height: .1vw;
+    background: #e0e0e0;
+}
+
+header{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-color: #000;
+}
+
+header img{
+    position: fixed;
+    top: -10%;
+    opacity: .6;
+    width: 100%;
+    z-index: -1;
+}
+
+.infoBackground{
+    height: 100vh;
+    padding: 2vw;
+    border-radius: 2% 2% 0 0;
+    box-shadow: 0 0 10vh 10vh #000;
+    margin: 50% 0 0 0;
+    background-color: #3c3c3c;
+}
+
+.nav{
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    color: #e0e0e0;
+}
+
+.info a{
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+.profiles{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    box-shadow: 0 0 1vw #000;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 2vw 0 0;
+}
+
+.profiles a{
+    width: 15vw;
+    height: 15vw;
+    display: block;
+}
+
+.profiles a img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: .2vw;
+}
+
+.infoBackground h4{
+    font-size: 1.6vw;
+}
+
+.infoBackground p, .infoBackground p a{
+    margin: 1vh 0 0 0;
+    font-size: 1.2vw;
+}
+
+.links{
+    height: 5vw;
+    background-color: #d0d0d0;
+    display: flex;
+    align-items: center;
+    border-radius: .7vw;
+}
+
+.links div{
+    height: 4vw;
+    background-size: cover;
+    transition: .3s;
+    margin: 0 .8vw;
+}
+
+.vkLink{
+    width: 4vw;
+    background-image: url("../images/VK_logo_Grey_120x120.svg");
+}
+
+.vkLink:hover{
+    background-image: url("../images/VK_logo_Blue_120x120.svg");
+}
+
+.tgLink{
+    width: 4vw;
+    background-image: url("../images/TG_Gray.svg");
+}
+
+.tgLink:hover{
+    background-image: url("../images/TG_Blue.svg");
+}
+
+.dsLink{
+    width: 5.28vw;
+    background-image: url("../images/DS_Gray.svg");
+}
+
+.dsLink:hover{
+    background-image: url("../images/DS_Purple.svg");
+}
+
+.gitLink{
+    width: 4vw;
+    background-image: url("../images/GIT_Gray.svg");
+}
+
+.gitLink:hover{
+    background-image: url("../images/GIT_Black.svg");
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects p{
+    font-size: 1.4vw;
+    color: #e0e0e0;
+    margin: 1vh 0;
+}
+
+.project{
+    color: #e0e0e0;
+    font-size: 1.2vw;
+    margin: 0 0 .6vh 0;
+}
+
+.project a{
+    text-decoration: none;
+    display: inline-block;
+    color: #e0e0e0;
+    font-size: 1.2vw;
+}
+
+.project a:after{
+    content: ' ';
+    display: block;
+    height: .1vh;
+    width: 0;
+    background: #e0e0e0;
+    transition: .2s;
+}
+
+.project a:hover:after{
+    width: 100%;
+}
